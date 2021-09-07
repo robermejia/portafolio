@@ -2,3 +2,168 @@
 FUENTES
 ================ */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+/* ================ 
+ESTILOS GLOBALES
+================ */
+/* Definir variables CSS personalizadas */
+:root {
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #eff0f4;
+  --bg-opacity: rgba(255, 255, 255, 0.5);
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --new-shadow: 3px 3px 3px 2px #acacac;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+  --black-alpha-color: rgba(0, 0, 0, 0.7);
+  /* --MODAL:  */
+  --bg-modal: var(--skin-color);
+  --text-modal: #ffffff;
+  /* --SCROLL:  */
+  --seleccion-text: #ffffff;
+  --scroll-background: #bbbbbb;
+  --scroll-barra: #666666;
+}
+
+/* ================ 
+   Anular las variables CSS personalizadas para el tema oscuro
+  ================ */
+body.dark {
+  --bg-black-900: #ffffff;
+  --bg-black-100: #656565;
+  --bg-black-50: #282c34;
+  --bg-opacity: #3b2f2d83;
+  --text-black-900: #ffffff;
+  --text-black-700: #ffffff;
+  --text-black-600: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #16191d, -3px -3px 3px #393f4b;
+  --new-shadow: 3px 3px 3px 2px #16191d;
+  --outer-shadow-0: 0 0 0 #16191d, 0 0 0 #393f4b;
+  --inner-shadow: inset 3px 3px 3px #16191d, inset -3px -3px 3px #393f4b;
+  --inner-shadow-0: inset 0 0 0 #16191d, inset 0 0 0 #393f4b;
+  --black-alpha-color: rgba(0, 0, 0, 0.7);
+  /* --MODAL:  */
+  --bg-modal: var(--skin-color);
+  --text-modal: #ffffff;
+  /* --SCROLL:  */
+  --seleccion-text: #282c34;
+  --scroll-background: #616c80;
+  --scroll-barra: #3f4653;
+}
+/* ===================
+ESTILOS GENERALES
+=================== */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: var(--bg-black-50);
+  transition: all 0.4s;
+}
+
+body.hidden-scrolling {
+  overflow-y: hidden;
+}
+
+*:not(i) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.outer-shadow {
+  box-shadow: var(--outer-shadow);
+}
+
+.inner-shadow {
+  box-shadow: var(--inner-shadow);
+}
+
+.hover-in-shadow {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================ NEW SHADOW PARA --SKIN-COLOR ================ */
+.new-shadow {
+  box-shadow: var(--new-shadow);
+}
+
+.new-shadow:hover {
+  box-shadow: var(--new-shadow);
+  /* padding: 10px 26px; */
+  /* filter: contrast(200%); */
+  filter: saturate(300%);
+  filter: brightness(90%);
+  color: #ffffff;
+}
+
+/* ================ NEW SHADOW PARA --SKIN-COLOR ================ */
+.hover-in-shadow:hover {
+  box-shadow: var(--outer-shadow-0);
+}
+
+.hover-in-shadow:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.hover-in-shadow:hover:after {
+  box-shadow: var(--inner-shadow);
+}
+
+.align-items-center {
+  align-items: center;
+}
