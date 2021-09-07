@@ -1,0 +1,17 @@
+/* Selector Personalizado*/
+::selection {
+  background-color: var(--skin-color);
+  color: var(--seleccion-text);
+}
+
+/* Scroll Personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--scroll-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-barra);
+  border-radius: 10px;
+  border-right: 3px solid var(--scroll-barra);
+}
