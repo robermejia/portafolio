@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--------------------------------- SEO ----------------------------------->
     <!--  Título de Página  -->
     <title>Roberto Mejía | Freelancer</title>
@@ -54,23 +55,74 @@
         disabled />
     <link rel="stylesheet" type="text/css" href="css/style-switcher.css" />
     <!--  Colores personalizados para selección y Scroll  -->
-    <link rel="stylesheet" href="css/personalizado.css">
+    <link rel="stylesheet" href="css/personalizado.css" />
     <!---------------------------------  FIN ESTILOS EXTERNOS  --------------------------------->
 </head>
+
 <body>
     <!--  PRELOADER -->
     <div class="preloader">
         <div class="box">
-        <div></div>
-        <div></div>
-        <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
     <!--  PRELOADER - FIN -->
+
+    <!--  HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo">
+                    <a href="/">
+                        <img id="logo-imagen" class="logotipo-dark" src="img/logos/logo-dark.png" alt="LOGO" />
+                    </a>
+                </div>
+                <div class="hamburger-btn outer-shadow hover-in-shadow">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  HEADER FIN -->
+
+    <!--  MENÚ DE NAVEGACIÓN  -->
+    <nav class="nav-menu">
+        <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+        <div class="nav-menu-inner">
+            <ul>
+                <li>
+                    <a href="#inicio" class="link-item inner-shadow active">inicio</a>
+                </li>
+                <li>
+                    <a href="#acerca" class="link-item outer-shadow hover-in-shadow">sobre mí</a>
+                </li>
+                <li>
+                    <a href="#servicios" class="link-item outer-shadow hover-in-shadow">servicios</a>
+                </li>
+                <li>
+                    <a href="#portafolio" class="link-item outer-shadow hover-in-shadow">portafolio</a>
+                </li>
+                <li>
+                    <a href="#testimonios" class="link-item outer-shadow hover-in-shadow">testimonios</a>
+                </li>
+                <li>
+                    <a href="#contacto" class="link-item outer-shadow hover-in-shadow">contacto</a>
+                </li>
+            </ul>
+        </div>
+        <!--  TEXTO COPYRIGHT -->
+        <p class="copyright-text">&copy; 2021 Desarrollado por Roberto Mejía</p>
+        <!--  TEXTO COPYRIGHT FIN -->
+    </nav>
+    <div class="fade-out-effect"></div>
+    <!-- MENÚ DE NAVEGACIÓN FIN  -->
 
     <!-- main js -->
     <script src="js/main.js"></script>
     <!-- style switcher js -->
     <script src="js/style-switcher.js"></script>
 </body>
+
 </html>
