@@ -1462,3 +1462,157 @@ SECCIÓN DE TESTIMONIO
 .testimonial-section .testi-slider-nav span i {
   line-height: 40px;
 }
+
+/* ================ 
+SECCIÓN DE CONTACTO
+================ */
+.contact-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+.contact-section .contact-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+}
+
+.contact-section .contact-item-inner {
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-section .contact-item i {
+  font-size: 25px;
+  color: var(--skin-color);
+}
+
+.contact-section .contact-item span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 15px 0 10px;
+  text-transform: capitalize;
+}
+
+.contact-section .contact-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 0;
+  word-break: break-word;
+}
+
+.contact-section .contact-form {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.contact-section .w-50 {
+  padding: 0 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.contact-section .input-group {
+  margin: 0 0 25px;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+.contact-section .input-group:after {
+  border-radius: 30px;
+}
+
+.contact-section .input-group .input-control {
+  height: 45px;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 0 15px;
+  color: var(--text-black-700);
+}
+
+.contact-section .input-group textarea.input-control {
+  height: 184px;
+  padding-top: 15px;
+  resize: none;
+}
+
+.contact-section .submit-btn {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: right;
+  padding: 0 15px;
+}
+
+/* ================ 
+VENTANA MODAL (MENSAJE VALIDACIÓN)
+================ */
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-alpha-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+  margin: 0 auto;
+}
+
+.contact-form {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+}
+
+.modal-content {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-response {
+  padding: 3rem;
+  width: calc(400px + 5%);
+  text-align: center;
+  background-color: var(--bg-modal);
+  color: var(--text-modal);
+}
+.contact-form-response svg {
+  margin-top: 1rem;
+  width: 4rem;
+  height: 4rem;
+  color: var(--text-modal);
+}
+
+.modal#gracias:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ================ 
+LOADER (SVG)
+ ================ */
+.none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
