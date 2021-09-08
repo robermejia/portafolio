@@ -1366,3 +1366,99 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
   right: 15px;
 }
 
+/* ================ 
+SECCIÓN DE TESTIMONIO
+================ */
+.testimonial-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+.testimonial-section .testi-box {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.testimonial-section .testi-slider {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.testimonial-section .testi-slider-container {
+  display: flex;
+  transition: margin 1s ease;
+  align-items: center;
+}
+
+.testimonial-section .testi-item {
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-section .testi-item i {
+  position: absolute;
+  font-size: 30px;
+  color: var(--text-black-600);
+  opacity: 0.1;
+}
+
+.testimonial-section .testi-item i.left {
+  left: 5px;
+  top: 5px;
+}
+
+.testimonial-section .testi-item i.right {
+  right: 5px;
+  bottom: 5px;
+}
+
+.testimonial-section .testi-item p {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-black-600);
+  margin: 0 0 10px;
+}
+
+.testimonial-section .testi-item img {
+  max-width: 70px;
+  display: inline-block;
+  width: 100%;
+}
+
+.testimonial-section .testi-item span {
+  display: block;
+  margin: 10px 0 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-black-700);
+  text-transform: capitalize;
+}
+
+.testimonial-section .testi-slider-nav {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.testimonial-section .testi-slider-nav span {
+  height: 40px;
+  width: 40px;
+  color: var(--skin-color);
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.testimonial-section .testi-slider-nav span:after {
+  border-radius: 50%;
+}
+
+.testimonial-section .testi-slider-nav span i {
+  line-height: 40px;
+}
