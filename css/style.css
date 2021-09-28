@@ -605,8 +605,8 @@ NAVEGACIÓN MENÚ
 }
 
 .home-section .home-text p {
-  color: var(--text-black-300);
-  font-size: 18px;
+  color: var(--text-black-600);
+  font-size: 40px;
   text-transform: capitalize;
   margin: 0;
 }
@@ -1029,7 +1029,7 @@ SECCIÓN PORTAFOLIO
   cursor: pointer;
   font-weight: 500;
   color: var(--text-black-600);
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   font-size: 16px;
   transition: all 0.3s ease;
 }
