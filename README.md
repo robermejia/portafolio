@@ -1,5 +1,5 @@
-# PORTAFOLIO (29-09-2021)
+# Eenlace a GitHub Pages
 
-[Web de tipo Portafolio CV](https://robermejia.github.io/portafolio/)
+[Enlace](https://robermejia.github.io/portafolio/)
   
 ![página web](https://i.ibb.co/Lpyd5Yc/seo.png)
