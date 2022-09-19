@@ -1,7 +1,8 @@
 /* ================ 
 FUENTES
 ================ */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ================ 
 ESTILOS GLOBALES
@@ -12,15 +13,15 @@ ESTILOS GLOBALES
   --bg-black-100: #dddddd;
   --bg-black-50: #eff0f4;
   --bg-opacity: rgba(255, 255, 255, 0.5);
-  --text-black-900: #000000;
+  --text-black-900: #262626;
   --text-black-700: #555555;
-  --text-black-600: #666666;
+  --text-black-600: #262626;
   --text-black-300: #bbbbbb;
-  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
-  --new-shadow: 3px 3px 3px 2px #acacac;
-  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
-  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
-  --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+  --outer-shadow: 3px 3px 3px #949494, -3px -3px 3px #f8f8f8;
+  --new-shadow: 3px 3px 3px 2px #949494;
+  --outer-shadow-0: 0 0 0 #949494, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #949494, inset -3px -3px 3px #f8f8f8;
+  --inner-shadow-0: inset 0 0 0 #949494, inset 0 0 0 #f8f8f8;
   --black-alpha-color: rgba(0, 0, 0, 0.7);
   /* --MODAL:  */
   --bg-modal: var(--skin-color);
@@ -45,7 +46,7 @@ body.dark {
   --outer-shadow: 3px 3px 3px #16191d, -3px -3px 3px #393f4b;
   --new-shadow: 3px 3px 3px 2px #16191d;
   --outer-shadow-0: 0 0 0 #16191d, 0 0 0 #393f4b;
-  --inner-shadow: inset 3px 3px 3px #16191d, inset -3px -3px 3px #393f4b;
+  --inner-shadow: inset 3px 3px 3px #000000, inset -3px -3px 3px #434444;
   --inner-shadow-0: inset 0 0 0 #16191d, inset 0 0 0 #393f4b;
   --black-alpha-color: rgba(0, 0, 0, 0.7);
   /* --MODAL:  */
@@ -431,23 +432,23 @@ NAVEGACIÓN MENÚ
 
 .btn-1 {
   padding: 10px 25px;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   /* color: var(--skin-color); */
   /* background-color: transparent; */
   color: #eff0f4;
   background-color: var(--skin-color);
   line-height: 1.5;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 5px;
   transition: all 0.3s ease;
   display: inline-block;
   border: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .btn-1:after {
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .effect-wrap .effect {
@@ -485,9 +486,10 @@ NAVEGACIÓN MENÚ
   height: 180px;
   width: 180px;
   border: 25px solid var(--skin-color);
-  border-radius: 50%;
+  border-radius: 5px;
   left: 50%;
   top: -120px;
+
   animation: leftBounce 3s ease-in-out infinite;
 }
 
@@ -567,7 +569,7 @@ NAVEGACIÓN MENÚ
 .section-title h2 {
   display: inline-block;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text-black-900);
   text-transform: uppercase;
   margin: 0;
@@ -621,6 +623,7 @@ NAVEGACIÓN MENÚ
   font-size: 20px;
   font-weight: 500;
   color: var(--text-black-600);
+  font-style: italic;
   margin: 0;
   text-transform: capitalize;
 }
@@ -633,13 +636,13 @@ NAVEGACIÓN MENÚ
   max-width: 450px;
   display: block;
   margin: auto;
-  border-radius: 50%;
+  border-radius: 5px;
   padding: 15px;
 }
 
 .home-section .home-img .img-box img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 5px;
   border: 10px solid transparent;
 }
 
@@ -732,7 +735,7 @@ NAVEGACIÓN MENÚ
   margin: 0 5px 10px;
   cursor: pointer;
   padding: 5px 10px;
-  border-radius: 30px;
+  border-radius: 5px;
   transition: all 0.3s ease;
   font-size: 16px;
   color: var(--text-black-600);
@@ -1025,7 +1028,7 @@ SECCIÓN PORTAFOLIO
   display: inline-block;
   margin: 0 5px 10px;
   padding: 5px 10px;
-  border-radius: 30px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
   color: var(--text-black-600);
@@ -1522,18 +1525,18 @@ SECCIÓN DE CONTACTO
 .contact-section .input-group {
   margin: 0 0 25px;
   transition: all 0.3s ease;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .contact-section .input-group:after {
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .contact-section .input-group .input-control {
   height: 45px;
   display: block;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 5px;
   border: none;
   background-color: transparent;
   font-size: 16px;
