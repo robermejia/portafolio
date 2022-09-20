@@ -2,6 +2,8 @@
 FUENTES
 ================ */
 /* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');  /* Scope One */
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700;800;900&family=Scope+One&display=swap'); /* Blinker*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ================ 
@@ -11,11 +13,11 @@ ESTILOS GLOBALES
 :root {
   --bg-black-900: #000000;
   --bg-black-100: #dddddd;
-  --bg-black-50: #eff0f4;
+  --bg-black-50: #eeeeee;
   --bg-opacity: rgba(255, 255, 255, 0.5);
-  --text-black-900: #262626;
+  --text-black-900: #4e4e4e;
   --text-black-700: #555555;
-  --text-black-600: #262626;
+  --text-black-600: #4e4e4e;
   --text-black-300: #bbbbbb;
   --outer-shadow: 3px 3px 3px #949494, -3px -3px 3px #f8f8f8;
   --new-shadow: 3px 3px 3px 2px #949494;
@@ -74,8 +76,9 @@ body.hidden-scrolling {
 }
 
 *:not(i) {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: 'Blinker', sans-serif;
+  font-weight: 500;
 }
 
 * {
@@ -261,13 +264,13 @@ HEADER
   display: flex;
   align-items: center;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 5px;
   justify-content: center;
   transition: all 0.3s ease;
 }
 
 .header .hamburger-btn:after {
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .header .hamburger-btn span {
@@ -363,7 +366,7 @@ NAVEGACIÓN MENÚ
   display: block;
   font-size: 35px;
   line-height: 35px;
-  border-radius: 50%;
+  border-radius: 5px;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -374,7 +377,7 @@ NAVEGACIÓN MENÚ
 }
 
 .nav-menu .close-nav-menu:after {
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .nav-menu-inner {
@@ -405,7 +408,7 @@ NAVEGACIÓN MENÚ
   color: var(--text-black-600);
   padding: 5px 30px;
   text-transform: capitalize;
-  border-radius: 30px;
+  border-radius: 25px;
   transition: all 0.3s ease;
 }
 
@@ -414,7 +417,7 @@ NAVEGACIÓN MENÚ
 }
 
 .nav-menu ul li a:after {
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .nav-menu .copyright-text {
@@ -433,10 +436,10 @@ NAVEGACIÓN MENÚ
 .btn-1 {
   padding: 10px 25px;
   font-size: 18px;
-  font-weight: 600;
-  /* color: var(--skin-color); */
+  font-weight: 700;
+  color: var(--bg-black-50);
   /* background-color: transparent; */
-  color: #eff0f4;
+  /* color: #eff0f4; */
   background-color: var(--skin-color);
   line-height: 1.5;
   cursor: pointer;
@@ -614,6 +617,7 @@ NAVEGACIÓN MENÚ
 }
 
 .home-section .home-text h2 {
+  
   font-size: 55px;
   font-weight: 700;
   color: var(--text-black-900);
@@ -626,6 +630,7 @@ NAVEGACIÓN MENÚ
   font-style: italic;
   margin: 0;
   text-transform: capitalize;
+  font-family: 'Scope One', serif;
 }
 
 .home-section .home-text .btn-1 {
@@ -709,6 +714,7 @@ NAVEGACIÓN MENÚ
 }
 
 .about-section .about-info p {
+  font-family: 'Scope One', serif;
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 15px;
@@ -739,7 +745,7 @@ NAVEGACIÓN MENÚ
   transition: all 0.3s ease;
   font-size: 16px;
   color: var(--text-black-600);
-  font-weight: 500;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -748,7 +754,7 @@ NAVEGACIÓN MENÚ
 }
 
 .about-section .about-tabs .tab-item.active {
-  color: var(--skin-color);
+  font-family: 'Blinker', sans-serif;
 }
 
 .about-section .tab-content {
@@ -952,7 +958,7 @@ SECCIÓN SERVICIOS
   height: 60px;
   width: 60px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 5px;
   transition: all 0.3s ease;
   display: block;
   margin: 0 auto 30px;
@@ -967,7 +973,7 @@ SECCIÓN SERVICIOS
   top: 0;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 5px;
   transition: all 0.3s ease;
 }
 
@@ -991,13 +997,14 @@ SECCIÓN SERVICIOS
 
 .service-section .service-item-inner h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-black-700);
   margin: 0 0 10px;
   text-transform: capitalize;
 }
 
 .service-section .service-item-inner p {
+  font-family: 'Scope One', serif;
   font-size: 16px;
   color: var(--text-black-600);
   margin: 0;
@@ -1030,7 +1037,7 @@ SECCIÓN PORTAFOLIO
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-black-600);
   /*text-transform: capitalize;*/
   font-size: 16px;
@@ -1111,6 +1118,7 @@ SECCIÓN PORTAFOLIO
   margin: 10px 0 0;
   color: var(--text-black-600);
   text-transform: capitalize;
+  font-weight: 600;
 }
 
 /* ================ 
@@ -1196,10 +1204,12 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
   margin: 0 0 15px;
   border-bottom: 1px solid var(--bg-black-100);
   padding-bottom: 10px;
+  font-family: 'Scope One', serif;
 }
 
 .portfolio-popup .pp-title p span {
   font-weight: 400;
+  font-family: 'Scope One', serif;
   text-transform: capitalize;
 }
 
@@ -1222,6 +1232,7 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
   color: var(--text-black-600);
   line-height: 26px;
   margin: 0;
+  font-family: 'Scope One', serif;
 }
 
 .portfolio-popup .info {
@@ -1236,6 +1247,7 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
   font-weight: 600;
   color: var(--text-black-600);
   font-size: 16px;
+  font-family: 'Scope One', serif;
 }
 
 .portfolio-popup .info ul li span {
@@ -1496,10 +1508,11 @@ SECCIÓN DE CONTACTO
 .contact-section .contact-item span {
   display: block;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-black-700);
   margin: 15px 0 10px;
   text-transform: capitalize;
+  font-family: 'Blinker', sans-serif;
 }
 
 .contact-section .contact-item-inner p {
@@ -1508,6 +1521,7 @@ SECCIÓN DE CONTACTO
   line-height: 26px;
   margin: 0;
   word-break: break-word;
+  font-family: 'Scope One', serif;
 }
 
 .contact-section .contact-form {
@@ -1542,6 +1556,7 @@ SECCIÓN DE CONTACTO
   font-size: 16px;
   padding: 0 15px;
   color: var(--text-black-700);
+  font-family: 'Scope One', serif;
 }
 
 .contact-section .input-group textarea.input-control {
