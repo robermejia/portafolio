@@ -618,7 +618,7 @@ NAVEGACIÓN MENÚ
 
 .home-section .home-text h2 {
   
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 700;
   color: var(--text-black-900);
 }
@@ -928,6 +928,7 @@ NAVEGACIÓN MENÚ
   color: var(--text-black-600);
   line-height: 26px;
   margin: 15px 0 0;
+  font-family: 'Scope One', serif;
 }
 
 /* ================ 
