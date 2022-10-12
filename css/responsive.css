@@ -47,8 +47,12 @@
         display: none;
     }
     .footer {
+        padding-top: 100px;
         width: 95%;
         margin: 0 auto;
+    }
+    .footer__text {
+        text-align: center;
     }
 }
 @media(max-width: 767px){
@@ -137,6 +141,7 @@
         display: none;
     }
     .footer {
+        padding-top: 50px;
         width: 90%;
         margin: 0 auto;
     }
@@ -169,7 +174,11 @@
         display: none;
     }
     .footer {
+        padding-top: 50px;
         width: 90%;
         margin: 0 auto;
+    }
+    .footer__text {
+        text-align: center;
     }
 }
