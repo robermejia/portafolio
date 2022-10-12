@@ -949,11 +949,12 @@ SECCIÓN SERVICIOS
 }
 
 .service-section .service-item-inner {
-  padding: 50px 15px;
+  padding: 50px 30px;
   border-radius: 5px;
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
 }
+
 
 .service-section .service-item-inner .icon {
   height: 60px;
@@ -1002,6 +1003,7 @@ SECCIÓN SERVICIOS
   color: var(--text-black-700);
   margin: 0 0 10px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .service-section .service-item-inner p {
