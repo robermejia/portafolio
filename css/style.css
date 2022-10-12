@@ -12,6 +12,7 @@ ESTILOS GLOBALES
 /* Definir variables CSS personalizadas */
 :root {
   --bg-black-900: #000000;
+  --bg-black-800: #4e4e4e;
   --bg-black-100: #dddddd;
   --bg-black-50: #eeeeee;
   --bg-opacity: rgba(255, 255, 255, 0.5);
@@ -39,6 +40,7 @@ ESTILOS GLOBALES
   ================ */
 body.dark {
   --bg-black-900: #ffffff;
+  --bg-black-800: #767676;
   --bg-black-100: #656565;
   --bg-black-50: #282c34;
   --bg-opacity: #3b2f2d83;
@@ -114,6 +116,7 @@ img {
 }
 
 .row {
+  height: auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -656,7 +659,7 @@ NAVEGACIÓN MENÚ
   ================ */
 
 .about-section {
-  padding: 80px 0 0;
+  padding: 80px 0px 0px 0px;
   min-height: 100vh;
 }
 
@@ -936,7 +939,7 @@ SECCIÓN SERVICIOS
 ================ */
 
 .service-section {
-  padding: 80px 0 80px;
+  padding: 80px 0px 0px 0px;
   min-height: 100vh;
 }
 
@@ -1018,7 +1021,7 @@ SECCIÓN SERVICIOS
 SECCIÓN PORTAFOLIO
 ================ */
 .portfolio-section {
-  padding: 80px 0 80px;
+  padding: 80px 0px 0px 0px;
   min-height: 100vh;
 }
 
@@ -1485,7 +1488,7 @@ SECCIÓN DE TESTIMONIO
 SECCIÓN DE CONTACTO
 ================ */
 .contact-section {
-  padding: 80px 0 80px;
+  padding: 80px 0px 0px 0px;
   min-height: 100vh;
 }
 
@@ -1575,6 +1578,25 @@ SECCIÓN DE CONTACTO
   padding: 0 15px;
 }
 
+/*==  FOOTER ==*/
+.footer {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  width: 1140px;
+  /* height: auto; */
+  border-top: 1px solid var(--bg-black-800);
+  padding-top: 20px;
+  position: relative;
+  top: -25px;
+  color: var(--bg-black-800);
+  font-family: 'Blinker', sans-serif;
+
+}
 /* ================ 
 VENTANA MODAL (MENSAJE VALIDACIÓN)
 ================ */
@@ -1621,6 +1643,7 @@ VENTANA MODAL (MENSAJE VALIDACIÓN)
   height: 4rem;
   color: var(--text-modal);
 }
+
 
 .modal#gracias:target {
   opacity: 1;

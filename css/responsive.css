@@ -17,6 +17,10 @@
     ::-webkit-scrollbar-thumb {
         display: none;
     }
+    .footer {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 @media(max-width: 991px){
     .effect-4 {
@@ -41,6 +45,10 @@
     
     ::-webkit-scrollbar-thumb {
         display: none;
+    }
+    .footer {
+        width: 95%;
+        margin: 0 auto;
     }
 }
 @media(max-width: 767px){
@@ -128,6 +136,10 @@
     ::-webkit-scrollbar-thumb {
         display: none;
     }
+    .footer {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 @media(max-width: 574px){
     .effect-4 {
@@ -155,5 +167,9 @@
     }
     ::-webkit-scrollbar-thumb {
         display: none;
+    }
+    .footer {
+        width: 90%;
+        margin: 0 auto;
     }
 }
