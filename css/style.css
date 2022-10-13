@@ -1588,7 +1588,7 @@ SECCIÓN DE CONTACTO
 
 .footer__text {
   width: 1140px;
-  /* height: auto; */
+  text-align: center;
   border-top: 1px solid var(--bg-black-800);
   padding-top: 20px;
   position: relative;
