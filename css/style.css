@@ -862,6 +862,10 @@ NAVEGACIÓN MENÚ
   position: relative;
 }
 
+.bandera {
+  width: 45px;
+  margin-left: 10px;
+}
 .about-section .timeline .timeline-item-inner:before {
   content: "";
   position: absolute;
