@@ -17,6 +17,13 @@
     ::-webkit-scrollbar-thumb {
         display: none;
     }
+    .container-about, 
+    .container-services,
+    .container-portfolio,
+    .container-contact {
+        margin-bottom: 150px;
+    }
+    
     .footer {
         width: 95%;
         margin: 0 auto;
@@ -46,8 +53,15 @@
     ::-webkit-scrollbar-thumb {
         display: none;
     }
+    .container-about, 
+    .container-services,
+    .container-portfolio,
+    .container-contact {
+        margin-bottom: 100px;
+    }
+
     .footer {
-        padding-top: 100px;
+        /* padding-top: 100px; */
         width: 95%;
         margin: 0 auto;
     }
@@ -140,6 +154,14 @@
     ::-webkit-scrollbar-thumb {
         display: none;
     }
+
+    .container-about, 
+    .container-services,
+    .container-portfolio,
+    .container-contact {
+        margin-bottom: 100px;
+    }
+
     .footer {
         padding-top: 50px;
         width: 90%;
@@ -173,6 +195,13 @@
     ::-webkit-scrollbar-thumb {
         display: none;
     }
+
+    .container-about, 
+    .container-services,
+    .container-portfolio,
+    .container-contact {
+    margin-bottom: 50px;
+}
     .footer {
         padding-top: 50px;
         width: 90%;
