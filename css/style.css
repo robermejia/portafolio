@@ -138,6 +138,9 @@ img {
   z-index: 1;
 }
 
+.link-item {
+  text-decoration: none;
+}
 /* ================ NEW SHADOW PARA --SKIN-COLOR ================ */
 .new-shadow {
   box-shadow: var(--new-shadow);
